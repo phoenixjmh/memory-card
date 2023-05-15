@@ -1,42 +1,77 @@
+
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width:90%;
+ height:80%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.display-panel{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:min-content auto;
+  gap:2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
-  padding: 2em;
+  place-items: center;
+  width:200px;
+  height:200px;
+  background-color: white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+}
+img{
+  width:150px;
+  height:150px;
+}
+#Orange{
+  /* background-color:url(https://i5.peapod.com/c/AO/AOSGD.jpg); */
+}
+#Banana{
+  background-color:yellow;
+}
+#Tomato{
+  background-color:red;
+}
+#Apple{
+  background-color:white;
+}
+#Brocolli{
+  background-color:darkgreen
+}
+#Carrot{
+  background-color:darkorange;
+}
+#Lemon{
+  background-color:yellow;
+}
+#BellPepper{
+  background-color:darkred;
+}
+#Onion{
+  background-color:white;
+}
+#Garlic{
+  background-color:white;
+}
+#Grapefruit{
+  background-color:pink;
+}
+#Strawberry{
+  background-color:rgb(125, 58, 58)
+}
+#Potato{
+  background-color:brown;
+}
+#Kiwi{
+  background-color:aqua;
 }
 
-.read-the-docs {
-  color: #888;
-}
+

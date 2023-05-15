@@ -3,12 +3,15 @@ const Card =(props)=>{
 const [isClicked,setIsClicked]=useState(false);
 
 useEffect(()=>{
+    console.log(props.isReset);
     if(props.isReset)
     setIsClicked(false);
-},[props.isReset])
+})
 const handleClick=()=>{
     if(!isClicked){
+        console.log('wait');
         props.increaseScore();
+        props.scrambleArray();
         setIsClicked(true);
     }
 
@@ -17,6 +20,15 @@ const handleClick=()=>{
     }
 }
 
-return<button onClick={handleClick}>{isClicked?'true':'false'}</button>
+const link={...props.imgs}[`${props.id}`]
+console.log(link);
+
+
+return(
+    
+    <div className='card' onClick={handleClick}id={props.id}>
+        <img src={link} alt="" />
+    </div>
+)
 }
 export default Card;
