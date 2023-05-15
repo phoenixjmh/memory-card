@@ -1,16 +1,15 @@
+import { useState } from "react";
 import Card from "./Card";
-// eslint-disable-next-line react/prop-types
 const DisplayPanel = (props)=>{
+        const cards=[
+        <Card {...props}/>,
+        <Card {...props}/>,
+        <Card {...props}/>,
+        <Card {...props}/>];
+            
+            return cards.map((card,index)=><div className="card" key={card+index}>{card}</div>)
 
-    return (
-        <>
-        <Card increaseScore={props.increaseScore} resetScore={props.resetScore}/>
-        <Card increaseScore={props.increaseScore} resetScore={props.resetScore}/>
-        <Card increaseScore={props.increaseScore} resetScore={props.resetScore}/>
-        <Card increaseScore={props.increaseScore} resetScore={props.resetScore}/>
-        </>
-
-    )
+    
 }
 
 export default DisplayPanel;

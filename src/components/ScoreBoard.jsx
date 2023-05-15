@@ -1,17 +1,16 @@
 import { useState ,useEffect} from "react";
 
 // eslint-disable-next-line react/prop-types
-const ScoreBoard = ({score})=>{
+const ScoreBoard = (props)=>{
     const [highscore,setHighScore] = useState(0);
     useEffect(()=>{
-        console.log(score);
-        if(score>highscore){
-            setHighScore(score);
+        if(props.score>highscore){
+            setHighScore(props.score);
         }
-    },[score,highscore])
+    },[props.score,highscore])
     return (
         <>
-        <p id="currentScore">{score}</p>
+        <p id="currentScore">{props.score}</p>
         <p id="highscore">{highscore}</p>
         </>
     );
