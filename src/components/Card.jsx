@@ -3,7 +3,6 @@ const Card =(props)=>{
 const [isClicked,setIsClicked]=useState(false);
 
 useEffect(()=>{
-    console.log(props.isReset);
     if(props.isReset)
     setIsClicked(false);
 })
@@ -22,7 +21,6 @@ const handleClick=()=>{
 
 const link={...props.imgs}[`${props.id}`]
 console.log(link);
-
 
 return(
     

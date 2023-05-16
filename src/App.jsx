@@ -36,7 +36,18 @@ const App = ()=>{
   }
   return (
   <>
-  <ScoreBoard score = {score}/>
+  <dialog open>
+  <form  method="dialog">
+    <h3>
+    Welcome! I hope you brought your appetite! See if you can eat every single food in this list!
+    But be careful..You need to try to avoid eating the same item twice, because that wouldn't be a very balanced diet, now would it?
+    Click item to munch.
+
+    </h3>
+   <button>Yum!</button>
+  </form>
+    </dialog>
+  <ScoreBoard score = {score} isReset={isReset}/>
   <DisplayPanel {...props}/>
   </>
   )
