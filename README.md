@@ -25,8 +25,13 @@ The main components in this app are simply Scoreboard and DisplayPanel.
 > an appropriate class is added to the score <div> so a style can be added to it.  
   
 ## DisplayPanel
-  > This component acts as the container for the Card components, as well as managing the scrambleArray feature when a card is clicked.
-  > An Array simply containing ID's is created, and is passed into the return statement as a map function, creating all the Cards, using the ID's from the object.
-  > imageLinks were created in a seperate file, those are then passed as props into each card Component.
+  > This component acts as the container for the Card components, as well as managing the scrambleArray feature when a card is clicked.  
+ > An Array simply containing ID's is created, and is passed into the return statement as a map function,  
+ > creating all the Cards, using the ID's from the object.  
+ > imageLinks were created in a seperate file, those are then passed as props into each card Component.
+ 
+ ## Card 
+ > This component simply draws the cards, using the props passed down to it as the primary functions.  
+ > The image links are displayed in a simple img with src set to the index of the HTML elements id within the imageLinks array passed as a prop. I felt like that was pretty clever.
   
 
