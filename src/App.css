@@ -44,12 +44,12 @@ body{
 .gameOver{
   color:red;
   font-size:2rem;
-  transition:font-size ease-in-out 1s;
+  transition:font-size ease-in-out .5s,color ease-in-out .5s;
 }
 .post-reset{
   color:white;
   font-size:1rem;
-  transition:font-size ease-in-out 1s;
+  transition:font-size ease-in-out .5s,color ease-in-out .5s;
 }
 
 dialog{
@@ -141,3 +141,6 @@ img{
 }
 
 
+.clicked{
+  border: 5px solid red;
+}
